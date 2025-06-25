@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DataExtractor"
+version = "0.1.0"
+description = "Extract and structure data from Excel files using OpenAI models"
+authors = [{ name="SiRiiL", email="mahdijaffri5@email.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+    "pandas",
+    "openai",
+    "python-dotenv"
+]
+
+[tool.setuptools.packages.find]
+where = ["DataExtractor"]
